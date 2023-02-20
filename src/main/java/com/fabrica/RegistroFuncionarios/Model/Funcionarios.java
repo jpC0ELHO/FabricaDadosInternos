@@ -19,9 +19,12 @@ public class Funcionarios {
 
     @Column
     private String funcao;
+    @Column
+    private boolean Acesso;
 
 
-    @JoinColumn(name="Categoria_id")
+    @ManyToOne
+    @JoinColumn(name="categoria_id")
     private Categoria categoria;
 
     //=====Constructor====
@@ -29,6 +32,23 @@ public class Funcionarios {
 
     }
     //============Getters and Setters========
+
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+
+    public boolean isAcesso() {
+        return Acesso;
+    }
+
+    public void setAcesso(boolean acesso) {
+        Acesso = acesso;
+    }
 
     public Integer getId() {
         return id;
