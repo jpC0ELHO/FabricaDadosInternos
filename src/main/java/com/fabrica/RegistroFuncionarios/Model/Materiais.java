@@ -2,6 +2,8 @@ package com.fabrica.RegistroFuncionarios.Model;
 
 import jakarta.persistence.*;
 
+@Entity
+@Table(name = "Materiais")
 public class Materiais {
 
     @Id
