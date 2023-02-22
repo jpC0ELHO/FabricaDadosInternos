@@ -21,6 +21,10 @@ public class CategoriaMateriais {
     public CategoriaMateriais() {
     }
 
+    public CategoriaMateriais(Integer id) {
+        this.id = id;
+    }
+
     //===Getters and setters====
     public Integer getId() {
         return id;

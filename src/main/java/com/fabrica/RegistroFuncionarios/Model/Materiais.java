@@ -26,6 +26,15 @@ public class Materiais {
     }
 
     //Getters and setters
+
+    public CategoriaMateriais getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(CategoriaMateriais categoria) {
+        this.categoria = categoria;
+    }
+
     public Integer getId() {
         return id;
     }
